@@ -1,0 +1,192 @@
+
+
+.border{
+    border: 2px solid black;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+    
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-gray{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+  
+  /* For Firefox */
+  scrollbar-color: #333 #222; /* Dark color for the thumb and track in Firefox */
+  
+
+/*
+
+
+  // show all the songs in the playlist
+
+  let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
+  // console.log(songUL);
+
+  for (const song of songs) {
+
+      // let song1 = song;
+
+      // // Remove "undefined"
+      // song1 = song1.replace("undefined", "");
+
+      // // Remove "%20" and replace it with a space
+      // song1 = song1.replace(/%20/g, " ");
+
+      // // Remove "320"
+      // song1 = song1.replace("320", "");
+
+      // // Log the cleaned filename
+      // // console.log(song1);
+
+
+      // console.log(son);
+      songUL.innerHTML = songUL.innerHTML +
+          `<li>
+                     <img class="invert" src="images/music.svg" alt="">
+                          <div class="info">
+                              <div>${song}</div>
+                              <div>song artist</div>
+                          </div>
+                          <div class="playnow">
+                              <span>play now </span>
+                              <img class="invert" src="images/play.svg" alt="">
+                          </div>
+                      </li>`
+      // console.log(songUL);
+
+  }
+
+
+
+
+
+  // Attach an addEventListener to each some
+
+  // Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach((e) => {
+  //     e.addEventListener('click', () => {
+  //         // console.log(e.querySelector(".info").firstElementChild.innerHTML);
+  //         let music = e.querySelector(".info").firstElementChild.innerHTML.trim();
+  //         // playmusic(music)
+
+  //     })
+
+  // })
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+<div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">  </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="images/prevsong.svg" alt="">
+                            <img width="35" id="play" src="images/play.svg" alt="">
+                            <img width="35" id="next" src="images/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+
+                       
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="card">
+                        <div class="play">
+
+                            <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Rounded green background -->
+                                <rect fill="green" />
+
+                                <!-- Original play button icon -->
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                        <img src="https://images.pexels.com/videos/27775313/30fps-4k-animal-animals-27775313.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                            alt="">
+                        <h2>Happy Hits</h2>
+                        <p>Hits to boost your mood and fill you with happinest.</p>
+                    </div>
